@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover, .dropdown-content a.selected {
+            background-color: #f1f1f1;
+            color: darkorange; /* Laranja escuro */
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <div class="topo">
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+            <div class="meio">
+                <img src="chart-histogram.svg" alt="">
+                <button class="b">Dashboard</button>
+                <img src="package.svg" alt="">
+                <button class="a">Produtos</button>
+            </div>
+            <div class="direitax">
+                <button class="va"><img class="ajeitar" src="plus-sign.svg" alt="">Novo produto</button>
+                <img src="User.jpg" alt="">
+            </div>
+        </div>
+        <div class="semitopo">
+            <div class="esquerda">
+                <h1>Novo produto</h1>
+                <p>Cadastre um produto para venda no marketplace</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-content">
+                <img class="gignte" src="Image (13).jpg" class="product-image" alt="">
+            </div>
+            <div class="right-content">
+                <div class="junta">
+                    <h2 class="cor">Dados do produto</h2>
+                </div>
+                <div class="inputs">
+                    <div class="juntar-inputs">
+                        <div class="input-group1">
+                            <label for="title">Título</label>
+                            <input type="text" id="title" placeholder="Nome do produto">
+                        </div>
+                        <div class="input-group2">
+                            <label for="value">Valor</label>
+                            <div class="ladu">
+                                <span class="nicolau">R$</span>
+                                <p>0,00</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="description">Descrição</label>
+                        <textarea id="description" placeholder="Escreva detalhes sobre o produto, tamanho, características"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="category">Categoria</label>
+                        <div class="juntos">
+                            <input type="text" id="category" placeholder="Selecione">
+                            <div class="suba">
+                                <div class="dropdown">
+                                    <img id="arrow-down" src="arrow-down-01.svg" alt="" onclick="toggleDropdown()">
+                                    <img id="arrow-up" src="arrow-up-01.svg" alt="" class="hide" onclick="toggleDropdown()">
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#" onclick="selectCategory('Móvel')">Móvel</a>
+                                        <a href="#" onclick="selectCategory('Brinquedo')">Brinquedo</a>
+                                        <a href="#" onclick="selectCategory('Papelaria')">Papelaria</a>
+                                        <a href="#" onclick="selectCategory('Saúde e Beleza')">Saúde e Beleza</a>
+                                        <a href="#" onclick="selectCategory('Utensílio')">Utensílio</a>
+                                        <a href="#" onclick="selectCategory('Vestuário')">Vestuário</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button class="cancel-button">Cancelar</button>
+                    <button class="save-button">Salvar e publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("arrow-down").classList.toggle("hide");
+            document.getElementById("arrow-up").classList.toggle("hide");
+        }
+
+        function selectCategory(category) {
+            var categoryInput = document.getElementById("category");
+            categoryInput.value = category;
+
+            // Remove a classe 'selected' de todos os links
+            var links = document.querySelectorAll(".dropdown-content a");
+            links.forEach(function(link) {
+                link.classList.remove("selected");
+            });
+
+            // Adiciona a classe 'selected' ao link clicado
+            var selectedLink = Array.from(links).find(link => link.textContent === category);
+            if (selectedLink) {
+                selectedLink.classList.add("selected");
+            }
+
+            document.getElementById("myDropdown").classList.remove("show");
+            document.getElementById("arrow-down").classList.remove("hide");
+            document.getElementById("arrow-up").classList.add("hide");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown img')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+
+                document.getElementById("arrow-down").classList.remove("hide");
+                document.getElementById("arrow-up").classList.add("hide");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 242, 242);
+}
+
+.tudo {
+ 
+ 
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FDF3F0;
+ 
+}
+
+.b {
+    border: none;
+    background-color: rgb(250, 242, 242);
+    width: 79px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+}
+.a {
+    border: none;
+    background-color: rgb(250, 242, 242);
+    width: 63px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.meio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.ajeitar {
+    max-width: 25px;
+}
+
+.esquerda {
+    margin-right: auto;
+}
+.direita {
+    display: flex;
+   margin-right: 270px;
+   margin-top: 50px;
+    gap: 10px;
+}
+
+.direita button.va {
+    display: flex;
+    align-items: center;
+   border: none;
+    width: 157px;
+    height: 40px;
+    padding: 0px 16px;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: var(--Brand-orange-base, #F24D0D);
+    color: white;
+    font-size: 14px;
+}
+
+.direita img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.semitopo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FDF3F0;
+}
+
+.semitopo .esquerda {
+   margin-left: 265px;
+}
+
+.semitopo .esquerda h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.semitopo .esquerda a {
+    color: #F24D0D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.semitopo .direita a {
+    color: #F24D0D;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1030px; /* Limita a largura máxima da div */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    height: auto;
+    border-radius: 20px;
+    background-color: #FDF3F0;
+}
+
+
+.left-content {
+    flex: 1;
+}
+
+.gignte {
+    width: 415px;
+    height: 340px;
+    gap: 24px;
+    border-radius: 20px;
+}
+
+.right-content {
+
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+ width: 591px;
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Grayscale-gray-100, #ADADAD);
+}
+
+.anuncio {
+    margin-left: auto;
+    background-color: #0095E5;
+    width: 77px;
+    height: 20px;
+    border-radius: 9999px;    
+    color: white;
+    border: none;
+}
+
+.botoes {
+    display: flex;
+justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #F24D0D;
+    border: 1px solid #F24D0D;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.save-button {
+    background-color: #F24D0D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+a {
+    text-decoration: none;
+}
+.junta {
+    display: flex;
+    justify-content: center;
+}
+
+.juntar-inputs {
+    display: flex;
+   
+}
+
+.cor {
+    display: flex;
+    align-items: start;
+    color: var(--Grayscale-gray-300, #666666);
+ font-size: 18px;
+
+}
+.input-group1 {
+    margin-bottom: 15px;
+    width: 223px;
+height: 62px;
+
+opacity: 0px;
+
+}
+
+.input-group1 label {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.input-group1 input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Grayscale-gray-100, #ADADAD);
+}
+
+.juntos {
+    display: flex;
+   align-items: center;
+}
+.nicolau {
+    color: var(--Brand-orange-base, #F24D0D);
+
+}
+.ladu {
+    display: flex;
+    align-items: center;
+}
+.line {
+    border: 1px solid rgb(194, 194, 194);
+    width: 100%;
+    margin-top: -13px;
+}
+::placeholder {
+    color: #3D3D3D;
+}
+textarea {
+    color: #3D3D3D;
+}
+.logo {
+   margin-right: auto;
+}
+.input-group2 {
+    
+    width: 223px;
+height: 62px;
+margin-left: 40px;
+opacity: 0px;
+
+}
+.input-group2, span p {
+margin-top: -0.1px;
+}
+.input-group2 label {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: -4px;
+}
+
+.input-group2 input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--Grayscale-gray-100, #ADADAD);
+}
+.suba {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+.direitax {
+    display: flex;
+   margin-left: auto;
+    gap: 10px;
+}
+
+.direitax button.va {
+    display: flex;
+    align-items: center;
+   border: none;
+    width: 157px;
+    height: 40px;
+    padding: 0px 16px;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: var(--Brand-orange-base, #F24D0D);
+    color: white;
+    font-size: 14px;
+}
+
+.direitax img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.ajeitar {
+    max-width: 20px;
+}
+/* Ajuste geral para telas menores */
+/* Topo: Ajuste para manter os elementos alinhados horizontalmente e não em coluna */
+/* Ajuste geral para telas menores */
+/* Topo: Ajuste para manter os elementos alinhados horizontalmente e não em coluna */
+/* Ajuste geral para telas menores */
+/* Topo: Ajuste para manter os elementos alinhados horizontalmente e não em coluna */
+@media (max-width: 1200px) {
+    .topo {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .direita, .meio {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+/* Semitopo: Centraliza o título da esquerda em telas menores */
+@media (max-width: 1024px) {
+    .semitopo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .semitopo .esquerda {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Colocar o content em coluna mais cedo e evitar que ocupe a largura total */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 80%; /* Ajuste para não ocupar 100% da página */
+        max-width: 800px;
+        padding: 20px;
+    }
+    
+    .right-content {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .gignte {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Ajustes para telas menores de 768px */
+@media (max-width: 768px) {
+    .topo {
+        flex-wrap: nowrap; /* Mantém os elementos em uma linha */
+        justify-content: space-between;
+    }
+    
+    .topo > * {
+        font-size: 0.9rem; /* Diminui gradualmente o tamanho dos elementos */
+    }
+
+    .direita {
+        margin-right: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha os elementos à esquerda */
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .gignte {
+        max-width: 300px;
+    }
+    
+    .right-content {
+        max-width: 100%;
+    }
+
+    .semitopo {
+        text-align: left; /* Ajuste o alinhamento para a esquerda */
+        align-items: flex-start;
+    }
+}
+
+/* Ajuste adicional para telas muito pequenas (ex: 600px) */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start; /* Empilha os elementos do topo */
+    }
+    
+    .topo > * {
+        font-size: 0.8rem; /* Diminui ainda mais o tamanho dos elementos */
+    }
+
+    .content {
+        width: 90%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .gignte {
+        width: 100%;
+        max-width: 280px;
+    }
+}
