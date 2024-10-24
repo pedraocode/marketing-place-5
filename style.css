@@ -7,7 +7,6 @@ body {
 
 .tudo {
  
- 
     display: flex;
     flex-direction: column;
    
@@ -328,21 +327,6 @@ margin-top: -0.1px;
 /* Topo: Ajuste para manter os elementos alinhados horizontalmente e não em coluna */
 /* Ajuste geral para telas menores */
 /* Topo: Ajuste para manter os elementos alinhados horizontalmente e não em coluna */
-@media (max-width: 1200px) {
-    .topo {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-    
-    .direita, .meio {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-}
-
-/* Semitopo: Centraliza o título da esquerda em telas menores */
 @media (max-width: 1024px) {
     .semitopo {
         display: flex;
@@ -355,7 +339,11 @@ margin-top: -0.1px;
     
     .semitopo .esquerda {
         margin-left: 0;
-        text-align: center;
+       margin-left: 20px;
+       text-align: left;
+    }
+    .direita {
+        margin-left: 20px;
     }
 }
 
@@ -376,20 +364,13 @@ margin-top: -0.1px;
     
     .gignte {
         width: 100%;
-        max-width: 400px;
+
     }
 }
 
 /* Ajustes para telas menores de 768px */
 @media (max-width: 768px) {
-    .topo {
-        flex-wrap: nowrap; /* Mantém os elementos em uma linha */
-        justify-content: space-between;
-    }
-    
-    .topo > * {
-        font-size: 0.9rem; /* Diminui gradualmente o tamanho dos elementos */
-    }
+
 
     .direita {
         margin-right: 0;
@@ -402,9 +383,7 @@ margin-top: -0.1px;
         padding: 10px;
     }
     
-    .gignte {
-        max-width: 300px;
-    }
+
     
     .right-content {
         max-width: 100%;
@@ -414,18 +393,14 @@ margin-top: -0.1px;
         text-align: left; /* Ajuste o alinhamento para a esquerda */
         align-items: flex-start;
     }
+  .usae {
+    display: none;
+  }
 }
 
 /* Ajuste adicional para telas muito pequenas (ex: 600px) */
 @media (max-width: 600px) {
-    .topo {
-        flex-direction: column;
-        align-items: flex-start; /* Empilha os elementos do topo */
-    }
-    
-    .topo > * {
-        font-size: 0.8rem; /* Diminui ainda mais o tamanho dos elementos */
-    }
+
 
     .content {
         width: 90%;
@@ -436,6 +411,8 @@ margin-top: -0.1px;
 
     .gignte {
         width: 100%;
-        max-width: 280px;
+
     }
 }
+
+
